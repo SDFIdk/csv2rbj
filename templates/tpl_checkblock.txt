@@ -1,0 +1,35 @@
+<RevCheckConfig xsi:type='esri:RevCheckConfig'>
+<Resources xsi:type='esri:RevResourceCollection'>
+<ResourceToValidateKey>{{GUID}}</ResourceToValidateKey>
+<SecondaryResourceKeys xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>{{SECONDARYRESKEY}}</PropertyArray></SecondaryResourceKeys>
+<KeyIndex xsi:type='esri:ArrayOfString'>{{SECONDARYKEYIDX}}</KeyIndex></Resources>
+<ConfigProperties xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>Reviewer Check GUID</Key>
+<Value xsi:type='xs:string'>{{REVCHECKGUID}}</Value></PropertySetProperty>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>Reviewer Check Name</Key>
+<Value xsi:type='xs:string'>{{CHECKLONGNAME}} Check</Value></PropertySetProperty>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>Reviewer Check Notes</Key>
+<Value xsi:type='xs:string'>{{REVNOTES}}</Value></PropertySetProperty>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>Reviewer Check Severity</Key>
+<Value xsi:type='xs:int'>{{SEVERITY}}</Value></PropertySetProperty>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>Reviewer Check Title</Key>
+<Value xsi:type='xs:string'>{{CHECKTITLE}}</Value></PropertySetProperty>
+{{CHECKPARAMS}}<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>Check Configuration Version</Key>
+<Value xsi:type='xs:int'>{{CHECKCONFIGVERSION}}</Value></PropertySetProperty></PropertyArray></ConfigProperties>
+<ConfigKeys xsi:type='esri:ArrayOfString'>
+{{CONFIGKEYS}}
+<String>Reviewer Check GUID</String>
+<String>Reviewer Check Name</String>
+<String>Reviewer Check Notes</String>
+<String>Reviewer Check Severity</String>
+<String>Reviewer Check Title</String></ConfigKeys>
+<ResourceStringCache>({{FC}})</ResourceStringCache>
+<CheckNameStringCache>{{CHECKLONGNAME}} Check</CheckNameStringCache></RevCheckConfig>

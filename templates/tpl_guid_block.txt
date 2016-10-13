@@ -1,0 +1,3 @@
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>{{GUID}}</Key>
+<Value xsi:type='xs:string'>{{FC}} DATABASE={{DATABASE}}, Type: 3</Value></PropertySetProperty>

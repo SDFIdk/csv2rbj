@@ -1,0 +1,20 @@
+<RowComparison xsi:type='esri:RowComparison'>
+<ValueField xsi:type='esri:Field'>
+<Name>{{FIELD1}}</Name>
+<Type>{{FIELDTYPE1}}</Type>
+<IsNullable>true</IsNullable>
+<Length>80</Length>
+<Precision>0</Precision>
+<Scale>0</Scale>
+<AliasName>Name</AliasName>
+<ModelName>{{FIELD1}}</ModelName></ValueField>
+<SearchField xsi:type='esri:Field'>
+<Name>{{FIELD2}}</Name>
+<Type>{{FIELDTYPE2}}</Type>
+<IsNullable>false</IsNullable>
+<Length>18</Length>
+<Precision>0</Precision>
+<Scale>0</Scale>
+<AliasName>Named Feature Identifier</AliasName>
+<ModelName>{{FIELD2}}</ModelName></SearchField>
+<ComparisonOperator>{{OPERATOR}}</ComparisonOperator></RowComparison>

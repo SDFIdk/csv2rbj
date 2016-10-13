@@ -1,0 +1,23 @@
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>{{FC}} DATABASE={{DATABASE}}, Type: 3</Key>
+<Value xsi:type='esri:RevFeatureClassResource'>
+<DatasetResource xsi:type='esri:RevBaseDatasetResource'>
+<ResourceDatasetType>5</ResourceDatasetType>
+<ResourceWorkspaceName xsi:type='esri:WorkspaceName'>
+<PathName>{{DATABASE}}</PathName>
+<BrowseName>{{BROWSENAME}}</BrowseName>
+<WorkspaceFactoryProgID>esriDataSourcesGDB.FileGDBWorkspaceFactory.1</WorkspaceFactoryProgID>
+<WorkspaceType>esriLocalDatabaseWorkspace</WorkspaceType>
+<ConnectionProperties xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>DATABASE</Key>
+<Value xsi:type='xs:string'>{{DATABASE}}</Value></PropertySetProperty></PropertyArray></ConnectionProperties></ResourceWorkspaceName>
+<ResourceDatasetName>{{FC}}</ResourceDatasetName>
+<ResourceIsWorkspace>false</ResourceIsWorkspace></DatasetResource>
+<ResourceFilterSet xsi:type='esri:RevResourceFilterSet'></ResourceFilterSet>
+<RevDatasetName>{{FC}}</RevDatasetName>
+<RevDatasetLocation>DATABASE={{DATABASE}}</RevDatasetLocation>
+<FullDatabaseMode>false</FullDatabaseMode>
+<ResourceProperties xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'></PropertyArray></ResourceProperties></Value></PropertySetProperty>

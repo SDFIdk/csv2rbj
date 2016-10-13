@@ -1,0 +1,4 @@
+
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>{{CHECKSHORTNAME}} Parameter 2</Key>
+<Value xsi:type='xs:string'>{{GUID}}</Value></PropertySetProperty>

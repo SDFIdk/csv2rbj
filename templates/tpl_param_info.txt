@@ -1,0 +1,3 @@
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>{{KEY}}</Key>
+<Value xsi:type='{{TYPE}}'>{{VALUE}}</Value></PropertySetProperty>

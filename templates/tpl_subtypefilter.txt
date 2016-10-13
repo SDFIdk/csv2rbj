@@ -1,0 +1,4 @@
+<Filter xsi:type='esri:RevSubtypeFilter'>
+<ResourceDatasetName>{{FC}}</ResourceDatasetName>
+<SubtypeWhereClause>FCSubtype = {{FCS}}</SubtypeWhereClause>
+<SubtypeCode>{{FCS}}</SubtypeCode></Filter>

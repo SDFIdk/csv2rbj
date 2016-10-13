@@ -1,0 +1,30 @@
+<esri:BatchJobs xmlns:esri='http://www.esri.com/schemas/ArcGIS/10.3' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema-instance'>
+<RevBatchJob xsi:type='esri:RevBatchJob' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+<BatchJobDescription xsi:type='esri:BatchJobDescription'>
+<BatchJobName>{{BATCHJOBNAME}}</BatchJobName>
+<CreatedBy>{{CREATOR}}</CreatedBy>
+<CreationDate>{{CREATIONDATE}}</CreationDate>
+<LastEditedBy>{{EDITOR}}</LastEditedBy>
+<LastEditDate>{{EDITDATE}}</LastEditDate>
+<BatchJobVersion>{{BATCHJOBVERSION}}</BatchJobVersion></BatchJobDescription>
+<ResourceRegistry xsi:type='esri:ResourceRegistry'>
+<RegistryStorage xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>Filters</Key>
+<Value xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+{{FILTER_GUIDS}}</PropertyArray></Value></PropertySetProperty>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>UniqueResources</Key>
+<Value xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+{{DATASOURCE}}</PropertyArray></Value></PropertySetProperty>
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>KeyHash</Key>
+<Value xsi:type='esri:PropertySet'>
+<PropertyArray xsi:type='esri:ArrayOfPropertySetProperty'>
+{{GUID_BLOCK2}}</PropertyArray></Value></PropertySetProperty></PropertyArray></RegistryStorage></ResourceRegistry>
+<CheckGroup xsi:type='esri:BatchJobGroup'>
+<GroupName>{{GROUPNAME}}</GroupName>
+{{CHECKBLOCKS}}</CheckGroup></RevBatchJob></esri:BatchJobs>

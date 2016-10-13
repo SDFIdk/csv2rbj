@@ -1,0 +1,11 @@
+type;title;fc1;fcs1;sql1;fc2;fcs2;sql2;severity;notes;specials
+Invalid Geometry;Invalid Geometry LakeA;LakeA;;;;;;;A note on valid geometries;
+Duplicate Geometry;Duplicate Geometry LakeA;LakeA;;;;;;4;;
+Multipart Line;Multipart Line RiverL;RiverL;;;;;;4;;
+Geometry on Geometry;Lake overlaps Forest;LakeA;;;ForestA;;;3;;relation=overlaps
+;This line is ignored because the line starts with semicolon (first spreadsheet cell is empty);;;;;;;;;
+Invalid Geometry;Invalid DEPCNT (fcs);DepthsL;DEPCNT;;;;;;;
+Invalid Geometry;Invalid w sql;DepthsL;;VALDCO<=10;;;;;;
+Geometry on Geometry;Crossing with sql clauses;CoastlineL;;OBJNAM IS NOT NULL;DepthsL;;VALDCO>0;1;;relation=crosses
+Geometry on Geometry;Error Rule no fc;;;;;;;;;
+Geometry on Geometry;Error Rule no fc2;CoastlineL;;;;;;;;

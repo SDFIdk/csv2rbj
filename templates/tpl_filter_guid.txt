@@ -1,0 +1,3 @@
+<PropertySetProperty xsi:type='esri:PropertySetProperty'>
+<Key>{{GUID}}</Key>
+<Value xsi:type='esri:RevResourceFilterSet'>{{FILTERS}}</Value></PropertySetProperty>

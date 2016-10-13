@@ -1,0 +1,14 @@
+
+<Filter xsi:type='esri:RevSQLQueryFilter'>
+<FilterCount>1</FilterCount>
+<InternalQuery xsi:type='esri:QueryFilter'>
+<SubFields>*</SubFields>
+<WhereClause>{{WHERECLAUSE}}</WhereClause>
+<SpatialReferenceFieldName></SpatialReferenceFieldName>
+<OutputSpatialReference xsi:nil='true'/>
+<Resolution>0</Resolution>
+<FIDSet xsi:nil='true'/>
+<FilterDefs xsi:type='esri:ArrayOfFilterDef'></FilterDefs>
+<Offset>-1</Offset>
+<Limit>-1</Limit></InternalQuery>
+<ResourceDatasetName>{{FC}}</ResourceDatasetName></Filter>

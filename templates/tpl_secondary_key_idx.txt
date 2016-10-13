@@ -1,0 +1,2 @@
+
+<String>{{CHECKSHORTNAME}} Parameter 2</String>
