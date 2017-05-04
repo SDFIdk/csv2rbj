@@ -1,3 +1,4 @@
+# -*-coding: utf-8-*-
 """
 Generator for .rbj files (Data Reviewer Batch Job) for some common rule types.
 
@@ -145,10 +146,10 @@ def create_batch_rbj_files(infile, db, outfilename=''):
                   .format(dic['type'], line, checktypes.keys()))
             continue
         if dic['fc1'] == '':
-            print ('Warning: Primary feature class (fc1) must be given. Skipping "{}"...'.format(dic['title']))
+            print('Warning: Primary feature class (fc1) must be given. Skipping "{}"...'.format(dic['title']))
             continue
         if dic['type'] == 'Geometry on Geometry' and dic['fc2'] == '':
-            print ('Warning: Secondary feature class (fc2) must be given for Geometry on Geometry checks. Skipping "{}"...'
+            print('Warning: Secondary feature class (fc2) must be given for Geometry on Geometry checks. Skipping "{}"...'
                    .format(dic['title']))
             continue
         counter += 1
@@ -334,7 +335,7 @@ def _get_param_info(p, dic):
         return _param_info_from_tpl(p, 'false', 'xs:boolean')
     elif p == 'NotQuery':
         s = 'false'
-        if 'not' in dic['specials']:
+        if 'not' in dic['specials']['Relation']:
             s = 'true'
         return _param_info_from_tpl(p, s, 'xs:boolean')
     elif p == 'SpatialEnum':  # Spatial relationships for Geometry on Geometry
@@ -415,10 +416,13 @@ if __name__ == '__main__':
         rbjfile = sys.argv[3]
     if len(sys.argv) > 2:
         db = sys.argv[2]
+
     if len(sys.argv) > 1:
         csvfile = sys.argv[1]
     else:
-        csvfile = os.path.join(os.getcwd(), 'demo.csv')
+        print("Usage: python " + __file__ + " CSVFILE [DEFAULTGDB [RBJFILE]]")
+        csvfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'demo.csv')
+        print("Generating rbj from sample file {} ...".format(csvfile))
 
     # db must point to a file-gdb, not sde
-    create_batch_rbj_files(csvfile, db)
+    create_batch_rbj_files(csvfile, db, rbjfile)
