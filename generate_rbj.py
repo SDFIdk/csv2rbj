@@ -138,7 +138,7 @@ def create_batch_rbj_files(infile, db, outfilename=''):
     for line in lines[1:]:  # First line is column headings, so starting on second line
         if line[0:1] == ';':  # Comment line if first character is ;
             continue
-        dic = dict(zip(keys.split(';'), line.strip().split(';')))
+        dic = dict(zip(keys.split(';'), line.strip().decode('utf-8').split(';')))
         if dic['specials']:
             dic['specials'] = dict(i.split("=") for i in dic['specials'].split(","))
         if dic['type'] not in checktypes:  # TODO: check for required keys
@@ -192,7 +192,7 @@ def create_batch_rbj_files(infile, db, outfilename=''):
     rbj = rbj.replace('{{CHECKBLOCKS}}',  checkblock_string)
 
     with open(outfilename, 'w') as outf:
-        outf.write(rbj)
+        outf.write(rbj.encode('utf-8'))
         print("Wrote file {}.".format(outfilename))
 
 
